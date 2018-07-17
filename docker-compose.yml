@@ -1,0 +1,14 @@
+ionic:
+    build: .
+    dockerfile: docker/Dockerfile
+    ports:
+        - 8100:8100
+        - 35729:35729
+    volumes:
+        - $PWD/:/myApp:z
+        - /dev/bus/usb:/dev/bus/usb
+        - ~/.gradle:/root/.gradle
+    container_name: ionic-dev
+    privileged: true
+    tty: true
+    stdin_open: true
