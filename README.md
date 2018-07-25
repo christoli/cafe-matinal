@@ -62,6 +62,11 @@ Run this command :
 
 > ionic cordova requirements
 
+### Trying to automate everything with docker
+
+Trying to have the same image for all developpers with a docker image and container.
+Got inspiration from [this github repo](https://github.com/mswag/docker-ionic/)
+
 
 
 
